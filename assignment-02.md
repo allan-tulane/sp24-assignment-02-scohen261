@@ -96,7 +96,7 @@ and push to your github repository.
       recursively solving two subproblems of size $n-1$ and then
       combining the solutions in constant time.
     T(n) = 2T(n-1) + O(1)
-    The run time for this would be O(n)
+    The run time for this would be O(2^n)
     
   * Algorithm $\mathcal{C}$ solves problems of size $n$ by dividing
       them into nine subproblems of size $n/3$, recursively solving
