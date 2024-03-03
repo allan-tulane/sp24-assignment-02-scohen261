@@ -64,20 +64,24 @@ and push to your github repository.
 .  
 .  
   * $W(n)=W(n-1)+2$
-.  W(n) = O(2n)
+  * W(1) = W(0) + 2, W(1) = 2
+  * W(n) = W(0) + 2n, so W(n) = O(2n)
+
 .  
 .  
 .  
 .  
   * $W(n)= W(n-1)+n^c$, with $c\geq 1$
-.  W(n) = O(n^c+1)
+.  W(1) = W(0) + 1^c
+  W(2) = W(1) + 2^c = (W(0) + 1^c) + 2^c
+  W(n) = W(0) + 1^c + 2^c .. n^c, so W(n) = O(n^c+1)
 .  
 .  
 .  
 .  
   * $W(n)=W(\sqrt{n})+1$
   * W(n)=W(2)+log 2(log 2 n)
-  * so W(n) = O(log_2 n)
+  * so W(n) = O(log n)
 
 
 2. Suppose that for a given task you are choosing between the following three algorithms:
