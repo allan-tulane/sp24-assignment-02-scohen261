@@ -76,6 +76,6 @@ def time_multiply(x, y, f):
     # multiply two numbers x, y using function f
     return (time.time() - start)*1000
 
-    
+print(subquadratic_multiply(BinaryNumber(2), BinaryNumber(2)))
     
 
